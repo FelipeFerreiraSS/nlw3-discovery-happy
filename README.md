@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Proffy" title="Proffy" src=".github/logo.svg" />
+    <img alt="Proffy" title="Proffy" src="./public/images/logo-readme.svg" />
 </h1>
 
 <p align="center">
@@ -10,15 +10,15 @@
 </p>
 
 <p align="center">
-  <img  src="./public/images/logo-readme.svg" alt="License">
+  <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E6&labelColor=121214" alt="License">
 
-  <img src="./public/images/happy-readme.png" alt="License">  
+  <img src="https://img.shields.io/github/stars/guilhermecapitao/nlw3-discovery-happy?label=stars&message=MIT&color=8257E6&labelColor=121214" alt="License">  
 </p>
 
 <br>
 
 <p align="center">
-  <img alt="Proffy" src=".github/happy.png" width="100%">
+  <img alt="Proffy" src="./public/images/happy-readme" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -53,4 +53,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 ---
 
-<p align="center">Desenvolvido com 💜 por Felipe Ferreira</p>
+<p align="center">Desenvolvido com 💜 por Felipe </p>
