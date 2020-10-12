@@ -1,0 +1,21 @@
+* {
+    margin: 0; /*Espaçamento*/
+    padding: 0; /*Preenchimento */
+}
+
+body {
+    height: 100vh; /*Altura*/
+    color: white;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body, input, button, textarea {
+    font-weight: 400; /*peso da fonte*/
+    font-size: 18px; /*tamanho da fonte*/
+    line-height: 1; /*espaços entre linhas*/
+    font-family: 'Nunito', sans-serif; /*Se ele não achar o
+    Nunito ele vai usar uma fonte sans-serif*/
+}

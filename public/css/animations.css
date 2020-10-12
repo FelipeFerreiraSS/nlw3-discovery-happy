@@ -1,0 +1,18 @@
+/*Animaçoes*/
+@keyframes up {
+    from {  /*onde começa */
+        opacity: 0;
+        transform: translateY(16px);/*indo de cima p/ baixo*/
+    }
+
+    to {    /*onde termina*/
+        opacity: 1;
+        transform: translateY(0); /*vindo de baixo p/ cima*/
+    }
+}
+
+.animate-up {
+    animation-name: up; /*nome do keyframe*/
+    animation-duration: 300ms; /*duração em mili-segundos*/
+    animation-fill-mode: backwards; /*aplicão as ultimas propriedades do "to" e fiquem aplicadas*/
+}

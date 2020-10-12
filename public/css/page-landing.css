@@ -1,0 +1,55 @@
+
+#page-landing {
+    background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%)no-repeat; /*(Degrade) Primeiro rotação, depois de cor ... até cor ..., no-repeat para não repetir*/
+    text-align: center;
+    min-height: 100vh;
+    display: flex; /*Alinha um ao lado do outro*/
+}
+
+#container {
+    margin: auto; /*Alinha automaticamente as margens encima, em baixo e nas laterais*/
+    width: 90%; /*Limita a margen dos lados */
+}
+
+.location, h1, .visit p { /*Responsividade para cel*/
+    height: 16vh;
+}
+
+.visit a {
+    width: 8rem;
+    height: 8rem;
+    background: #ffd666;
+    border: none; /*tira as bordas*/
+    border-radius: 3rem; /*arredondar bordas*/
+    display: flex;
+    align-items: center; /*se alinha de cima para baixo*/
+    justify-content: center; /*se alinha da direita para a esquerda*/
+    margin: auto;
+    transition: background .2s; /*velocidade do hover*/
+}
+
+.visit a:hover {  /*mudar cor do botão quando o mause passar por sima*/
+    background: #96feff;
+}
+
+
+/*Um tempo diferente para cada animação*/
+#logo {
+    animation-delay: 50ms;
+}
+
+.location {
+    animation-delay: 100ms;
+}
+
+main h1 {
+    animation-delay: 150ms;
+}
+
+.visit p {
+    animation-delay: 200ms;
+}
+
+.visit a {
+    animation-delay: 250ms;
+}
