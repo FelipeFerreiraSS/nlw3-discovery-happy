@@ -18,7 +18,7 @@
 <br>
 
 <p align="center">
-  <img alt="Proffy" src="./public/images/happy-readme" width="100%">
+  <img alt="Proffy" src="./public/images/happy-readme.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
