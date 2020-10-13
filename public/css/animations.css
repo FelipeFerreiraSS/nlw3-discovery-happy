@@ -11,8 +11,23 @@
     }
 }
 
+/*animação da page localize*/
+@keyframes right {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
 .animate-up {
     animation-name: up; /*nome do keyframe*/
     animation-duration: 300ms; /*duração em mili-segundos*/
     animation-fill-mode: backwards; /*aplicão as ultimas propriedades do "to" e fiquem aplicadas*/
+}
+
+.animate-right {
+    animation-name: right;
+    animation-duration: 300ms;
 }
