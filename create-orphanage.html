@@ -43,6 +43,8 @@
 
                     <div class="map-container">
                         <div id="mapid"></div>
+                        <input type="hidden" name="lat">
+                        <input type="hidden" name="lng">
                         <footer>
                             <a href="#" id="select-point">
                                 Clique no mapa para adicionar a localização
@@ -72,12 +74,14 @@
 
                             <div class="new-upload">
                                 <input name="images" placeholder="Cole o link da foto aqui" required>
-                                <span><img src="./public/images/remove-file.svg" alt="remover foto"></span>
+                                <span onclick="deleteField(event)">
+                                    <img src="./public/images/remove-file.svg" alt="remover foto"/>
+                                </span>
                             </div>
                             
                         </div>
-                        <button type="button"> <!--todo botão tem por padrao emviar o formulario para isso nao acontecer como type="button"-->
-                            <img src="./public/images/add-file.svg" alt="Adicionar nova imagem">
+                        <button onclick="addPhotoField()" type="button"> <!--todo botão tem por padrao emviar o formulario para isso nao acontecer como type="button"-->
+                            <img src="./public/images/add-file.svg" alt="Nova imagem">
                         </button>
                     </div>
 
