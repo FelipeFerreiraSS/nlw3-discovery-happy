@@ -1,0 +1,23 @@
+{
+  "name": "nlw3-discovery-happy",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">\r     <img alt=\"Proffy\" title=\"Proffy\" src=\"./public/images/logo-readme.svg\" />\r </h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeFerreiraSS/nlw3-discovery-happy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FelipeFerreiraSS/nlw3-discovery-happy/issues"
+  },
+  "homepage": "https://github.com/FelipeFerreiraSS/nlw3-discovery-happy#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
