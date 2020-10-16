@@ -39,7 +39,7 @@ orphanagesSpan.forEach( span => {
         id: span.dataset.id,
         name: span.dataset.name,
         lat: span.dataset.lat,
-        lang: span.dataset.lng
+        lng: span.dataset.lng
     }
 
     addMarker(orphanage)
