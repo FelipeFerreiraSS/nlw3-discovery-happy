@@ -81,3 +81,12 @@ function toggleSelect(event) {
     input.value = button.dataset.value
 
 }
+
+function validate(event) {
+    //validar se lat e ing estão preenchidos
+    const needsLatAndLng = false;
+    if(needsLatAndLng) { 
+        event.preventDefault()
+        alert('Prencha todo o formulario') 
+    }
+}
