@@ -1,36 +1,36 @@
 const Database = require('./db');
+const saveOrphanage = require('./saveOrphanage');
 
 Database.then(async db => {
+
+
     //inserir dados na tabela
-    await db.run(`
-        INSERT INTO orphanages (
-            lat,
-            lng,
-            name,
-            about,
-            whatsapp,
-            images,
-            instructions,
-            opening_hours,
-            open_on_weekends
-        ) VALUES (
-            "-27.222633",
-            "-49.6455874",
-            "Lar das meninas",
-            "Presta assistência a crianças de 06 a 15 anos que se encontre em situação de risco e/ou vulnerabilidade social.",
-            "98989898",
+    await saveOrphanage(db, {
+        id: 1,
+        lat: "-27.222633",
+        lng: "-49.6555874",
+        name: "Lar das meninos",
+        about:"Presta assistência a crianças de 06 a 15 anos que se encontre em situação de risco e/ou vulnerabilidade social.",
+        whatsapp:"9898989898",
+        images: [
             "https://images.unsplash.com/photo-1597387126034-0026d138e5dc?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
-            "Venha como se sentir a vontade muito e traga muito amor e paciêcia para dar.",
-            "Horário de visitas Das 18h até 8h",
-            "1"
-        );
-    `)  
+
+            "https://images.unsplash.com/photo-1601725591042-d657de65a47b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9"
+        ].toString(),
+        instructions: "Venha como se sentir a vontade muito e traga muito amor e paciêcia para dar.",
+        opening_hours: "Horário de visitas Das 18h até 8h",
+        open_on_weekends: "0"
+    })  
 
     //consultar dados da tabela
     const selectedOrphanages = await db.all("SELECT * FROM orphanages")
-    console.log(selectedOrphanages)
+    console.log(selectedOrphanages) 
 
     //consultar somente um orphanato, pelo id
-    const orphanage = await db.all('SELECT * FROM orphanages WHERE id = "1"')
+    const orphanage = await db.all('SELECT * FROM orphanages WHERE id = "3"')
     console.log(orphanage)
+
+    /* //deletar dado da tabela     se quiser deletar tudo não coloque o id=
+    console.log(await db.run("DELETE FROM orphanages WHERE id = '4'"))
+    console.log(await db.run("DELETE FROM orphanages WHERE id = '5'")) */
 }) 
